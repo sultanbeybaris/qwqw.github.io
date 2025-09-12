@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Құжат</title>
+
+    <style>
+        /* Бұл стильдер код блоктарын ерекшелеу үшін */
+        pre code {
+            display: block;
+            background: #272822;
+            color: #f8f8f2;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            overflow-x: auto;
+        }
+        .accordion details {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <main>
+        <section>
+            <h2>HTML не үшін қажет?</h2>
+            <p>HTML (HyperText Markup Language) — бұл веб-беттердің құрылымын жасауға арналған негізгі тіл. Ол мәтін, сурет, сілтеме, кесте және басқа элементтерді орналастыруға мүмкіндік береді. Әрбір веб-сайттың негізі HTML болып табылады.</p>
+        </section>
+        <section>
+            <h2>HTML код үлгісі</h2>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="kk"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Мысал бет&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Сәлем әлем!&lt;/h1&gt;
+    &lt;p&gt;Бұл HTML мысалы.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+        <section>
+            <h2>CSS дегеніміз не?</h2>
+            <p>CSS (Cascading Style Sheets) — веб-беттердің сыртқы көрінісін безендіруге арналған тіл.</p>
+        </section>
+        <section>
+            <h2>CSS код үлгісі</h2>
+            <pre><code class="language-css">body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+    color: #35424a;
+}
+</code></pre>
+        </section>
+        <section>
+            <h2>Негізгі CSS қасиеттері</h2>
+            <div class="accordion">
+                <details>
+                    <summary><strong>color</strong> — мәтін түсі</summary>
+                    <p>Элементтің мәтін түсін анықтайды. Мысал: <code>color: red;</code></p>
+                </details>
+                <details>
+                    <summary><strong>background-color</strong> — фон түсі</summary>
+                    <p>Элементтің фон түсін орнатады. Мысал: <code>background-color: #f4f4f4;</code></p>
+                </details>
+                <details>
+                    <summary><strong>font-size</strong> — қаріп өлшемі</summary>
+                    <p>Мәтін өлшемін орнатады. Мысал: <code>font-size: 16px;</code></p>
+                </details>
+                <details>
+                    <summary><strong>margin</strong> — сыртқы аралық</summary>
+                    <p>Элементтің шекарасынан тыс кеңістік жасайды. Мысал: <code>margin: 10px;</code></p>
+                </details>
+                <details>
+                    <summary><strong>padding</strong> — ішкі аралық</summary>
+                    <p>Элементтің ішінде, шекара мен мазмұн арасында кеңістік жасайды. Мысал: <code>padding: 10px;</code></p>
+                </details>
+                <details>
+                    <summary><strong>border</strong> — шекара</summary>
+                    <p>Элементтің айналасына жиек қосады. Мысал: <code>border: 1px solid #333;</code></p>
+                </details>
+                <details>
+                    <summary><strong>display</strong> — көрсету түрі</summary>
+                    <p>Элементтің бетте қалай көрсетілетінін анықтайды. Мысал: <code>display: flex;</code></p>
+                </details>
+                <details>
+                    <summary><strong>flex</strong> — flex-контейнер параметрлері</summary>
+                    <p>Икемді орналасу үшін қолданылады. Мысал: <code>display: flex; flex-direction: row;</code></p>
+                </details>
+                <details>
+                    <summary><strong>text-align</strong> — мәтінді туралау</summary>
+                    <p>Мәтінді көлденеңінен туралайды. Мысал: <code>text-align: center;</code></p>
+                </details>
+            </div>
+        </section>
+        <section>
+            <h2>Негізгі HTML тегтері</h2>
+            <div class="accordion">
+                <details>
+                    <summary><strong>&lt;h1&gt;–&lt;h6&gt;</strong> — тақырыптар</summary>
+                    <p>Әр түрлі деңгейдегі тақырыптарды жасау үшін қолданылады. <br>Мысал: <code>&lt;h1&gt;Тақырып&lt;/h1&gt;</code></p>
+                </details>
+                <details>
+                    <summary><strong>&lt;p&gt;</strong> — абзац</summary>
+                    <p>Мәтін абзацын жасайды. <br>Мысал: <code>&lt;p&gt;Абзац мәтіні&lt;/p&gt;</code></p>
+                </details>
+                <details>
+                    <summary><strong>&lt;a&gt;</strong> — сілтеме</summary>
+                    <p>Гиперсілтеме жасайды. <br>Мысал: <code>&lt;a href="https://example.com"&gt;Сілтеме&lt;/a&gt;</code></p>
+                </details>
+                <details>
+                    <summary><strong>&lt;img&gt;</strong> — сурет</summary>
+                    <p>Сурет енгізеді. <br>Мысал: <code>&lt;img src="image.jpg" alt="Сипаттама"&gt;</code></p>
+                </details>
+                <details>
+                    <summary><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> — тізімдер</summary>
+                    <p><code>&lt;ul&gt;</code> — белгіленген тізім, <code>&lt;ol&gt;</code> — нөмірленген, <code>&lt;li&gt;</code> — тізім элементі.<br>
+                    Мысал:
+                    <pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;Тармақ 1&lt;/li&gt;
+  &lt;li&gt;Тармақ 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </p>
+                </details>
+                <details>
+                    <summary><strong>&lt;div&gt;</strong> — контейнер</summary>
+                    <p>Блоктық элемент — басқа элементтер үшін контейнер.<br>Мысал: <code>&lt;div&gt;Контент&lt;/div&gt;</code></p>
+                </details>
+                <details>
+                    <summary><strong>&lt;span&gt;</strong> — жолдық контейнер</summary>
+                    <p>Мәтіннің бөлігін ерекшелеу үшін жолдық элемент.<br>Мысал: <code>&lt;span&gt;Мәтін&lt;/span&gt;</code></p>
+                </details>
+                <details>
+                    <summary><strong>&lt;table&gt;</strong> — кесте</summary>
+                    <p>Кесте жасайды.<br>Мысал:
+                    <pre><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;&lt;td&gt;Ұяшық&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    </p>
+                </details>
+                <details>
+                    <summary><strong>&lt;form&gt;</strong> — форма</summary>
+                    <p>Деректер енгізу үшін форма жасайды.<br>Мысал:
+                    <pre><code class="language-html">&lt;form&gt;
+  &lt;input type="text"&gt;
+  &lt;button&gt;Жіберу&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                    </p>
+                </details>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

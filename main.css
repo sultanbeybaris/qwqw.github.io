@@ -1,0 +1,351 @@
+/* Основной фон и шрифт */
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2d3a4a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер контента */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(53,66,74,0.12);
+    padding: 32px 24px;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #35424a;
+    margin-top: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 2rem;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+/* Аккордеоны */
+.accordion details {
+    margin-bottom: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e3e8ee;
+    padding: 10px 16px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.04);
+}
+
+.accordion details[open] {
+    box-shadow: 0 4px 16px rgba(53,66,74,0.10);
+    border-color: #b6c2d9;
+}
+
+.accordion summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2d3a4a;
+    outline: none;
+    padding: 4px 0;
+}
+
+.accordion p, .accordion pre {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+}
+
+.accordion code {
+    background: #e3e8ee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+/* Кнопки */
+button, input[type="submit"] {
+    background: linear-gradient(90deg, #6a93cb 0%, #a4bfef 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(90deg, #4e6fa3 0%, #7fa7d9 100%);
+    box-shadow: 0 4px 16px rgba(53,66,74,0.16);
+}
+
+/* Ссылки */
+a {
+    color: #4e6fa3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #2d3a4a;
+    text-decoration: underline;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    background: #f8fafc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+td, th {
+    border: 1px solid #e3e8ee;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background: #e0eafc;
+    font-weight: 600;
+}
+
+/* Формы */
+input, textarea {
+    border: 1px solid #b6c2d9;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f8fafc;
+}
+
+input:focus, textarea:focus {
+    border-color: #6a93cb;
+    outline: none;
+    background: #e0eafc;
+}
+/* Основной фон и шрифт */
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2d3a4a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер контента */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(53,66,74,0.12);
+    padding: 32px 24px;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #35424a;
+    margin-top: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 2rem;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+/* Аккордеоны */
+.accordion details {
+    margin-bottom: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e3e8ee;
+    padding: 10px 16px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.04);
+}
+
+.accordion details[open] {
+    box-shadow: 0 4px 16px rgba(53,66,74,0.10);
+    border-color: #b6c2d9;
+}
+
+.accordion summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2d3a4a;
+    outline: none;
+    padding: 4px 0;
+}
+
+.accordion p, .accordion pre {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+}
+
+.accordion code {
+    background: #e3e8ee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+/* Кнопки */
+button, input[type="submit"] {
+    background: linear-gradient(90deg, #6a93cb 0%, #a4bfef 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(90deg, #4e6fa3 0%, #7fa7d9 100%);
+    box-shadow: 0 4px 16px rgba(53,66,74,0.16);
+}
+
+/* Ссылки */
+a {
+    color: #4e6fa3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #2d3a4a;
+    text-decoration: underline;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    background: #f8fafc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+td, th {
+    border: 1px solid #e3e8ee;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background: #e0eafc;
+    font-weight: 600;
+}
+
+/* Формы */
+input, textarea {
+    border: 1px solid #b6c2d9;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f8fafc;
+}
+
+input:focus, textarea:focus {
+    border-color: #6a93cb;
+    outline: none;
+    background: #e0eafc;
+}
+/* ...existing code... */
+.accordion summary {
+    border-radius: 8px; /* Делаем углы чуть круглыми */
+    padding: 6px 12px;
+    transition: background 0.2s;
+}
+.accordion summary:hover {
+    background: #ececec;
+}
+/* ...existing code... */
+/* ...existing code... */
+
+/* Анимация для открытия аккордеона */
+.accordion details[open] {
+    animation: openAccordion 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes openAccordion {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+/* Анимация для summary при наведении */
+.accordion summary {
+    border-radius: 8px;
+    padding: 6px 12px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.accordion summary:hover {
+    background: #ececec;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.10);
+    transform: scale(1.03);
+}
+
+/* Плавное появление содержимого details */
+.accordion details > *:not(summary) {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.accordion details[open] > *:not(summary) {
+    opacity: 1;
+}
+
+/* ...existing code... */
+/* ...existing code... */
+
+/* Плавное появление содержимого details */
+.accordion details > *:not(summary) {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+}
+
+.accordion details[open] > *:not(summary) {
+    max-height: 500px; /* Достаточно большое значение для контента */
+    opacity: 1;
+    overflow: visible;
+}
+
+/* ...existing code... */

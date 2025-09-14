@@ -292,60 +292,159 @@ input:focus, textarea:focus {
     background: #ececec;
 }
 /* ...existing code... */
-/* ...existing code... */
 
-/* Анимация для открытия аккордеона */
-.accordion details[open] {
-    animation: openAccordion 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+/* --- Темная тема --- */
+body.dark-mode {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #e0eafc;
 }
-
-@keyframes openAccordion {
-    0% {
-        opacity: 0;
-        transform: scaleY(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: scaleY(1);
-    }
+body.dark-mode main {
+    background: #2d3a4a;
+    box-shadow: 0 8px 32px rgba(20,20,30,0.32);
 }
-
-/* Анимация для summary при наведении */
-.accordion summary {
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+    color: #e0eafc;
+}
+body.dark-mode .accordion details {
+    background: #35424a;
+    border-color: #232526;
+    color: #000000;
+}
+body.dark-mode .accordion summary {
+    color: #e0eafc;
+}
+body.dark-mode table {
+    background: #35424a;
+}
+body.dark-mode th {
+    background: #232526;
+    color: #000000;
+}
+body.dark-mode td {
+    color: #e0eafc;
+}
+body.dark-mode input, 
+body.dark-mode textarea {
+    background: #232526;
+    color: #e0eafc;
+    border-color: #414345;
+}
+body.dark-mode input:focus, 
+body.dark-mode textarea:focus {
+    background: #35424a;
+    border-color: #6a93cb;
+}
+body.dark-mode button, 
+body.dark-mode input[type="submit"] {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #e0eafc;
+}
+body.dark-mode a {
+    color: #a4bfef;
+}
+body.dark-mode a:hover {
+    color: #e0eafc;
+}
+.section-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s, transform 0.7s;
+}
+.section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.code-playground {
+    background: #f8fafc;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+.code-inputs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.code-inputs textarea {
+    width: 33%;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 0.95rem;
     border-radius: 8px;
-    padding: 6px 12px;
-    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    border: 1px solid #b6c2d9;
+    background: #fff;
+    resize: vertical;
+    min-height: 80px;
+    max-height: 180px;
+    padding: 8px;
 }
-.accordion summary:hover {
-    background: #ececec;
-    box-shadow: 0 2px 8px rgba(53,66,74,0.10);
-    transform: scale(1.03);
+.code-result {
+    margin-top: 8px;
 }
-
-/* Плавное появление содержимого details */
-.accordion details > *:not(summary) {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.accordion details[open] > *:not(summary) {
-    opacity: 1;
-}
-
-/* ...existing code... */
-/* ...existing code... */
-
-/* Плавное появление содержимого details */
-.accordion details > *:not(summary) {
-    max-height: 0;
-    opacity: 0;
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.04);
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+    border: 1px solid #e3e8ee;
+    padding: 0;
 }
 
-.accordion details[open] > *:not(summary) {
-    max-height: 500px; /* Достаточно большое значение для контента */
-    opacity: 1;
-    overflow: visible;
+.menu-btn {
+    flex: 1 1 0;
+    background: none;
+    color: #35424a;
+    border: none;
+    border-right: 1px solid #e3e8ee;
+    border-radius: 0;
+    padding: 16px 0;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: none;
 }
 
-/* ...existing code... */
+.menu-btn:last-child {
+    border-right: none;
+}
+
+.menu-btn.active {
+    background: #e0eafc;
+    color: #2d3a4a;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
+    font-weight: 700;
+}
+.menu-btn:hover:not(.active) {
+    background: #f0f4fa;
+    color: #4e6fa3;
+}
+.theme-btn.theme-circle {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background: linear-gradient(120deg, #6a93cb 0%, #a4bfef 100%);
+    color: #fff;
+    margin: 0 12px 0 0;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.theme-btn.theme-circle:hover {
+    background: linear-gradient(120deg, #4e6fa3 0%, #7fa7d9 100%);
+    box-shadow: 0 4px 16px rgba(53,66,74,0.16);
+}

@@ -23,13 +23,26 @@
     </style>
 </head>
 <body>
-    <script src="script.js"></script>
     <main>
-        <section>
-            <h2>HTML не үшін қажет?</h2>
-            <p>HTML (HyperText Markup Language) — бұл веб-беттердің құрылымын жасауға арналған негізгі тіл. Ол мәтін, сурет, сілтеме, кесте және басқа элементтерді орналастыруға мүмкіндік береді. Әрбір веб-сайттың негізі HTML болып табылады.</p>
-        </section>
-        <section>
+
+<nav class="main-menu">
+  <button class="menu-btn" data-section="editor">Кодтауға арналған кеңістік</button>
+  <button class="menu-btn" data-section="html">HTML</button>
+  <button class="menu-btn" data-section="css">CSS</button>
+  <button class="menu-btn" data-section="js">JavaScript</button>
+ <button id="theme-toggle" class="theme-btn theme-circle" title="Тема">🌙</button>
+</nav>
+<!-- Место для кодирования -->
+<section id="editor-section">
+  <!-- ...твой редактор... -->
+</section>
+
+<!-- HTML раздел -->
+<section id="html-section" style="display:none;">
+  <h2>HTML не үшін қажет?</h2>
+  <p>HTML (HyperText Markup Language) — бұл веб-беттердің құрылымын жасауға арналған негізгі тіл...</p>
+  <!-- ...остальной HTML контент... -->
+           <section>
             <h2>HTML код үлгісі</h2>
             <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang="kk"&gt;
@@ -44,64 +57,7 @@
 &lt;/html&gt;
 </code></pre>
         </section>
-        <section>
-            <h2>CSS дегеніміз не?</h2>
-            <p>CSS (Cascading Style Sheets) — веб-беттердің сыртқы көрінісін безендіруге арналған тіл.</p>
-        </section>
-        <section>
-            <h2>CSS код үлгісі</h2>
-            <pre><code class="language-css">body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-h1 {
-    color: #35424a;
-}
-</code></pre>
-        </section>
-        <section>
-            <h2>Негізгі CSS қасиеттері</h2>
-            <div class="accordion">
-                <details>
-                    <summary><strong>color</strong> — мәтін түсі</summary>
-                    <p>Элементтің мәтін түсін анықтайды. Мысал: <code>color: red;</code></p>
-                </details>
-                <details>
-                    <summary><strong>background-color</strong> — фон түсі</summary>
-                    <p>Элементтің фон түсін орнатады. Мысал: <code>background-color: #f4f4f4;</code></p>
-                </details>
-                <details>
-                    <summary><strong>font-size</strong> — қаріп өлшемі</summary>
-                    <p>Мәтін өлшемін орнатады. Мысал: <code>font-size: 16px;</code></p>
-                </details>
-                <details>
-                    <summary><strong>margin</strong> — сыртқы аралық</summary>
-                    <p>Элементтің шекарасынан тыс кеңістік жасайды. Мысал: <code>margin: 10px;</code></p>
-                </details>
-                <details>
-                    <summary><strong>padding</strong> — ішкі аралық</summary>
-                    <p>Элементтің ішінде, шекара мен мазмұн арасында кеңістік жасайды. Мысал: <code>padding: 10px;</code></p>
-                </details>
-                <details>
-                    <summary><strong>border</strong> — шекара</summary>
-                    <p>Элементтің айналасына жиек қосады. Мысал: <code>border: 1px solid #333;</code></p>
-                </details>
-                <details>
-                    <summary><strong>display</strong> — көрсету түрі</summary>
-                    <p>Элементтің бетте қалай көрсетілетінін анықтайды. Мысал: <code>display: flex;</code></p>
-                </details>
-                <details>
-                    <summary><strong>flex</strong> — flex-контейнер параметрлері</summary>
-                    <p>Икемді орналасу үшін қолданылады. Мысал: <code>display: flex; flex-direction: row;</code></p>
-                </details>
-                <details>
-                    <summary><strong>text-align</strong> — мәтінді туралау</summary>
-                    <p>Мәтінді көлденеңінен туралайды. Мысал: <code>text-align: center;</code></p>
-                </details>
-            </div>
-        </section>
-        <section>
-            <h2>Негізгі HTML тегтері</h2>
+         <h2>Негізгі HTML тегтері</h2>
             <div class="accordion">
                 <details>
                     <summary><strong>&lt;h1&gt;–&lt;h6&gt;</strong> — тақырыптар</summary>
@@ -154,8 +110,105 @@ h1 {
 &lt;/form&gt;</code></pre>
                     </p>
                 </details>
+</section>
+
+<!-- CSS раздел -->
+<section id="css-section" style="display:none;">
+  <h2>CSS дегеніміз не?</h2>
+  <p>CSS (Cascading Style Sheets) — веб-беттердің сыртқы көрінісін безендіруге арналған тіл...</p>
+  <!-- ...остальной CSS контент... -->
+       
+        <section>
+            <h2>CSS код үлгісі</h2>
+            <pre><code class="language-css">body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+    color: #35424a;
+}
+</code></pre>
+        </section>
+         <section>
+            <h2>Негізгі CSS қасиеттері</h2>
+            <div class="accordion">
+                <details>
+                    <summary><strong>color</strong> — мәтін түсі</summary>
+                    <p>Элементтің мәтін түсін анықтайды. Мысал: <code>color: red;</code></p>
+                </details>
+                <details>
+                    <summary><strong>background-color</strong> — фон түсі</summary>
+                    <p>Элементтің фон түсін орнатады. Мысал: <code>background-color: #f4f4f4;</code></p>
+                </details>
+                <details>
+                    <summary><strong>font-size</strong> — қаріп өлшемі</summary>
+                    <p>Мәтін өлшемін орнатады. Мысал: <code>font-size: 16px;</code></p>
+                </details>
+                <details>
+                    <summary><strong>margin</strong> — сыртқы аралық</summary>
+                    <p>Элементтің шекарасынан тыс кеңістік жасайды. Мысал: <code>margin: 10px;</code></p>
+                </details>
+                <details>
+                    <summary><strong>padding</strong> — ішкі аралық</summary>
+                    <p>Элементтің ішінде, шекара мен мазмұн арасында кеңістік жасайды. Мысал: <code>padding: 10px;</code></p>
+                </details>
+                <details>
+                    <summary><strong>border</strong> — шекара</summary>
+                    <p>Элементтің айналасына жиек қосады. Мысал: <code>border: 1px solid #333;</code></p>
+                </details>
+                <details>
+                    <summary><strong>display</strong> — көрсету түрі</summary>
+                    <p>Элементтің бетте қалай көрсетілетінін анықтайды. Мысал: <code>display: flex;</code></p>
+                </details>
+                <details>
+                    <summary><strong>flex</strong> — flex-контейнер параметрлері</summary>
+                    <p>Икемді орналасу үшін қолданылады. Мысал: <code>display: flex; flex-direction: row;</code></p>
+                </details>
+                <details>
+                    <summary><strong>text-align</strong> — мәтінді туралау</summary>
+                    <p>Мәтінді көлденеңінен туралайды. Мысал: <code>text-align: center;</code></p>
+                </details>
             </div>
         </section>
+</section>
+
+<!-- JavaScript раздел -->
+<section id="js-section" style="display:none;">
+  <h2>JavaScript дегеніміз не?</h2>
+  <p>JavaScript — веб-беттерге интерактивтілік қосатын бағдарламалау тілі...</p>
+        JavaScript арқылы батырмаға басқанда әрекет жасауға, деректерді өңдеуге, анимация қосуға болады.
+    </p>
+    <h3>Мысал код:</h3>
+    <pre><code>
+// Батырмаға басқанда хабарлама шығару
+document.getElementById('btn').onclick = function() {
+    alert('Сәлем, әлем!');
+};
+    </code></pre>
+    <h3>Жұмыс істейтін мысал:</h3>
+    <button id="btn-js-demo" style="margin-top:10px;">Бас!</button>
+</section>
+</section>
+ <section>
+  <h2>кодтауға арналған кеңістік</h2>
+  <div class="code-playground">
+    <div class="code-inputs">
+      <textarea id="html-code" placeholder="HTML" rows="6"></textarea>
+      <textarea id="css-code" placeholder="CSS" rows="6"></textarea>
+      <textarea id="js-code" placeholder="JavaScript" rows="6"></textarea>
+    </div>
+    <button id="run-code" class="theme-btn" style="position:static;margin:12px 0;">Нәтиже көрсету</button>
+    <div class="code-result">
+      <iframe id="result-frame" style="width:100%;height:220px;border-radius:8px;border:1px solid #e3e8ee;background:#fff;"></iframe>
+    </div>
+  </div>
+</section>
+       
+        <section>
+           
+            </div>
+        </section>
+        <script src="script.js"></script>
     </main>
 </body>
 </html>

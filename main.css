@@ -448,3 +448,56 @@ body.dark-mode a:hover {
     background: linear-gradient(120deg, #4e6fa3 0%, #7fa7d9 100%);
     box-shadow: 0 4px 16px rgba(53,66,74,0.16);
 }
+body.dark-mode {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #e0eafc;
+}
+body.dark-mode main {
+    background: #2d3a4a;
+    box-shadow: 0 8px 32px rgba(20,20,30,0.32);
+}
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+    color: #e0eafc;
+}
+body.dark-mode .main-menu {
+    background: #232526;
+    border-color: #414345;
+}
+body.dark-mode .menu-btn {
+    color: #e0eafc;
+    border-right: 1px solid #414345;
+    background: none;
+}
+body.dark-mode .menu-btn.active {
+    background: #35424a;
+    color: #a4bfef;
+}
+body.dark-mode .menu-btn:hover:not(.active) {
+    background: #414345;
+    color: #e0eafc;
+}
+body.dark-mode .theme-btn.theme-circle {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #e0eafc;
+}
+body.dark-mode .theme-btn.theme-circle:hover {
+    background: linear-gradient(120deg, #35424a 0%, #6a93cb 100%);
+}
+body.dark-mode .code-playground {
+    background: #232526;
+    box-shadow: 0 2px 8px rgba(20,20,30,0.18);
+}
+body.dark-mode .code-inputs textarea {
+    background: #35424a;
+    color: #e0eafc;
+    border: 1px solid #414345;
+}
+body.dark-mode .code-result {
+    background: #232526;
+}
+body.dark-mode pre, body.dark-mode code {
+    background: #35424a;
+    color: #e0eafc;
+}

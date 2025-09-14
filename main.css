@@ -1,4 +1,4 @@
-/* Основной фон и шрифт */
+
 body {
     background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Контейнер контента */
+
 main {
     max-width: 900px;
     margin: 40px auto;
@@ -16,8 +16,6 @@ main {
     box-shadow: 0 8px 32px rgba(53,66,74,0.12);
     padding: 32px 24px;
 }
-
-/* Заголовки */
 h1, h2, h3 {
     color: #35424a;
     margin-top: 0;
@@ -34,7 +32,7 @@ section {
     margin-bottom: 32px;
 }
 
-/* Аккордеоны */
+
 .accordion details {
     margin-bottom: 12px;
     background: #f8fafc;
@@ -71,7 +69,7 @@ section {
     font-size: 0.95em;
 }
 
-/* Кнопки */
+
 button, input[type="submit"] {
     background: linear-gradient(90deg, #6a93cb 0%, #a4bfef 100%);
     color: #fff;
@@ -90,7 +88,7 @@ button:hover, input[type="submit"]:hover {
     box-shadow: 0 4px 16px rgba(53,66,74,0.16);
 }
 
-/* Ссылки */
+
 a {
     color: #4e6fa3;
     text-decoration: none;
@@ -102,7 +100,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Таблицы */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -123,7 +121,7 @@ th {
     font-weight: 600;
 }
 
-/* Формы */
+
 input, textarea {
     border: 1px solid #b6c2d9;
     border-radius: 6px;
@@ -140,7 +138,7 @@ input:focus, textarea:focus {
     outline: none;
     background: #e0eafc;
 }
-/* Основной фон и шрифт */
+
 body {
     background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -149,7 +147,7 @@ body {
     padding: 0;
 }
 
-/* Контейнер контента */
+
 main {
     max-width: 900px;
     margin: 40px auto;
@@ -159,7 +157,6 @@ main {
     padding: 32px 24px;
 }
 
-/* Заголовки */
 h1, h2, h3 {
     color: #35424a;
     margin-top: 0;
@@ -176,7 +173,7 @@ section {
     margin-bottom: 32px;
 }
 
-/* Аккордеоны */
+
 .accordion details {
     margin-bottom: 12px;
     background: #f8fafc;
@@ -213,7 +210,7 @@ section {
     font-size: 0.95em;
 }
 
-/* Кнопки */
+
 button, input[type="submit"] {
     background: linear-gradient(90deg, #6a93cb 0%, #a4bfef 100%);
     color: #fff;
@@ -232,7 +229,7 @@ button:hover, input[type="submit"]:hover {
     box-shadow: 0 4px 16px rgba(53,66,74,0.16);
 }
 
-/* Ссылки */
+
 a {
     color: #4e6fa3;
     text-decoration: none;
@@ -244,7 +241,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Таблицы */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -264,8 +260,6 @@ th {
     background: #e0eafc;
     font-weight: 600;
 }
-
-/* Формы */
 input, textarea {
     border: 1px solid #b6c2d9;
     border-radius: 6px;
@@ -282,16 +276,7 @@ input:focus, textarea:focus {
     outline: none;
     background: #e0eafc;
 }
-/* ...existing code... */
-.accordion summary {
-    border-radius: 8px; /* Делаем углы чуть круглыми */
-    padding: 6px 12px;
-    transition: background 0.2s;
-}
-.accordion summary:hover {
-    background: #ececec;
-}
-/* ...existing code... */
+
 
 
 /* --- Темная тема --- */

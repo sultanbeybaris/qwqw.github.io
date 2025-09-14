@@ -1,24 +1,4 @@
 
-document.querySelectorAll('.accordion summary').forEach(summary => {
-
-    const arrow = document.createElement('span');
-    arrow.className = 'accordion-arrow';
-    arrow.innerHTML = '&#9654;'; 
-    arrow.style.marginRight = '8px';
-    arrow.style.transition = 'transform 0.3s';
-    summary.prepend(arrow);
-
-
-    summary.parentElement.addEventListener('toggle', function () {
-        if (summary.parentElement.open) {
-            arrow.style.transform = 'rotate(90deg)';
-        
-            summary.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-            arrow.style.transform = 'rotate(0deg)';
-        }
-    });
-});
 document.getElementById('theme-toggle').onclick = function() {
     document.body.classList.toggle('dark-mode');
     this.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';

@@ -23,7 +23,9 @@
     </style>
 </head>
 <body>
+  
     <main>
+        <input type="text" id="search-accordion" placeholder="Қасиетті іздеу...">
 
 <nav class="main-menu">
   <button class="menu-btn" data-section="editor">Кодтау</button>
@@ -56,6 +58,7 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+            <button onclick="copyCode('#html-section pre code')">Кодты көшіру</button>
         </section>
          <h2>Негізгі HTML тегтері</h2>
             <div class="accordion">
@@ -114,82 +117,293 @@
 
 <section id="css-section" style="display:none;">
   <h2>CSS дегеніміз не?</h2>
-  <p>CSS (Cascading Style Sheets) — веб-беттердің сыртқы көрінісін безендіруге арналған тіл...</p>
-  
-       
-        <section>
-            <h2>CSS код үлгісі</h2>
-            <pre><code class="language-css">body {
-    background-color: #f4f4f4;
-    color: #333;
+  <p>
+    <b>CSS</b> (Cascading Style Sheets) — веб-беттердің сыртқы көрінісін безендіруге арналған тіл.<br>
+    CSS арқылы түстерді, шрифттерді, орналасуды, анимацияларды және адаптивті дизайнды жасауға болады.<br>
+    CSS веб-дизайнның негізі болып табылады.
+  </p>
+  <h2>CSS код үлгісі</h2>
+  <pre><code class="language-css">body {
+    background-color: #232526;
+    color: #e0eafc;
 }
 h1 {
-    color: #35424a;
+    font-size: 2rem;
+    color: #a4bfef;
 }
-</code></pre>
-        </section>
-         <section>
-            <h2>Негізгі CSS қасиеттері</h2>
-            <div class="accordion">
-                <details>
-                    <summary><strong>color</strong> — мәтін түсі</summary>
-                    <p>Элементтің мәтін түсін анықтайды. Мысал: <code>color: red;</code></p>
-                </details>
-                <details>
-                    <summary><strong>background-color</strong> — фон түсі</summary>
-                    <p>Элементтің фон түсін орнатады. Мысал: <code>background-color: #f4f4f4;</code></p>
-                </details>
-                <details>
-                    <summary><strong>font-size</strong> — қаріп өлшемі</summary>
-                    <p>Мәтін өлшемін орнатады. Мысал: <code>font-size: 16px;</code></p>
-                </details>
-                <details>
-                    <summary><strong>margin</strong> — сыртқы аралық</summary>
-                    <p>Элементтің шекарасынан тыс кеңістік жасайды. Мысал: <code>margin: 10px;</code></p>
-                </details>
-                <details>
-                    <summary><strong>padding</strong> — ішкі аралық</summary>
-                    <p>Элементтің ішінде, шекара мен мазмұн арасында кеңістік жасайды. Мысал: <code>padding: 10px;</code></p>
-                </details>
-                <details>
-                    <summary><strong>border</strong> — шекара</summary>
-                    <p>Элементтің айналасына жиек қосады. Мысал: <code>border: 1px solid #333;</code></p>
-                </details>
-                <details>
-                    <summary><strong>display</strong> — көрсету түрі</summary>
-                    <p>Элементтің бетте қалай көрсетілетінін анықтайды. Мысал: <code>display: flex;</code></p>
-                </details>
-                <details>
-                    <summary><strong>flex</strong> — flex-контейнер параметрлері</summary>
-                    <p>Икемді орналасу үшін қолданылады. Мысал: <code>display: flex; flex-direction: row;</code></p>
-                </details>
-                <details>
-                    <summary><strong>text-align</strong> — мәтінді туралау</summary>
-                    <p>Мәтінді көлденеңінен туралайды. Мысал: <code>text-align: center;</code></p>
-                </details>
-            </div>
-        </section>
+.button {
+    background: #6a93cb;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: none;
+    transition: background 0.3s;
+}
+.button:hover {
+    background: #35424a;
+}
+</code></pre><button onclick="copyCode('#css-section pre code')">Кодты көшіру</button>
+  <h2>Негізгі және қосымша CSS қасиеттері</h2>
+  <div class="accordion">
+    <details>
+      <summary><strong>color</strong> — мәтін түсі</summary>
+      <p>Элементтің мәтін түсін анықтайды. <br>Мысал: <code>color: red;</code></p>
+    </details>
+    <details>
+      <summary><strong>background-color</strong> — фон түсі</summary>
+      <p>Элементтің фон түсін орнатады. <br>Мысал: <code>background-color: #232526;</code></p>
+    </details>
+    <details>
+      <summary><strong>font-size</strong> — қаріп өлшемі</summary>
+      <p>Мәтін өлшемін орнатады. <br>Мысал: <code>font-size: 20px;</code></p>
+    </details>
+    <details>
+      <summary><strong>font-family</strong> — қаріп түрі</summary>
+      <p>Мәтіннің қаріпін орнатады. <br>Мысал: <code>font-family: Arial, sans-serif;</code></p>
+    </details>
+    <details>
+      <summary><strong>font-weight</strong> — қаріп қалыңдығы</summary>
+      <p>Мәтіннің қалыңдығын орнатады. <br>Мысал: <code>font-weight: bold;</code></p>
+    </details>
+    <details>
+      <summary><strong>margin</strong> — сыртқы аралық</summary>
+      <p>Элементтің шекарасынан тыс кеңістік жасайды. <br>Мысал: <code>margin: 10px;</code></p>
+    </details>
+    <details>
+      <summary><strong>padding</strong> — ішкі аралық</summary>
+      <p>Элементтің ішінде, шекара мен мазмұн арасында кеңістік жасайды. <br>Мысал: <code>padding: 10px;</code></p>
+    </details>
+    <details>
+      <summary><strong>border</strong> — шекара</summary>
+      <p>Элементтің айналасына жиек қосады. <br>Мысал: <code>border: 1px solid #e0eafc;</code></p>
+    </details>
+    <details>
+      <summary><strong>border-radius</strong> — бұрышты жұмсарту</summary>
+      <p>Элемент бұрыштарын дөңгелектейді. <br>Мысал: <code>border-radius: 8px;</code></p>
+    </details>
+    <details>
+      <summary><strong>box-shadow</strong> — көлеңке</summary>
+      <p>Элементке көлеңке қосады. <br>Мысал: <code>box-shadow: 0 2px 8px rgba(53,66,74,0.08);</code></p>
+    </details>
+    <details>
+      <summary><strong>display</strong> — көрсету түрі</summary>
+      <p>Элементтің бетте қалай көрсетілетінін анықтайды. <br>Мысал: <code>display: flex;</code></p>
+    </details>
+    <details>
+      <summary><strong>flex</strong> — flex-контейнер параметрлері</summary>
+      <p>Икемді орналасу үшін қолданылады. <br>Мысал: <code>display: flex; flex-direction: row;</code></p>
+    </details>
+    <details>
+      <summary><strong>grid</strong> — grid-контейнер параметрлері</summary>
+      <p>Күрделі орналасу үшін қолданылады. <br>Мысал: <code>display: grid; grid-template-columns: 1fr 1fr;</code></p>
+    </details>
+    <details>
+      <summary><strong>text-align</strong> — мәтінді туралау</summary>
+      <p>Мәтінді көлденеңінен туралайды. <br>Мысал: <code>text-align: center;</code></p>
+    </details>
+    <details>
+      <summary><strong>vertical-align</strong> — тік туралау</summary>
+      <p>Жолдағы элементті тік бағытта туралайды. <br>Мысал: <code>vertical-align: middle;</code></p>
+    </details>
+    <details>
+      <summary><strong>width</strong> — ені</summary>
+      <p>Элементтің енін орнатады. <br>Мысал: <code>width: 200px;</code></p>
+    </details>
+    <details>
+      <summary><strong>height</strong> — биіктігі</summary>
+      <p>Элементтің биіктігін орнатады. <br>Мысал: <code>height: 100px;</code></p>
+    </details>
+    <details>
+      <summary><strong>overflow</strong> — мазмұнды басқару</summary>
+      <p>Элементтің мазмұны сыймаған кезде не болатынын анықтайды. <br>Мысал: <code>overflow: auto;</code></p>
+    </details>
+    <details>
+      <summary><strong>position</strong> — орналасу түрі</summary>
+      <p>Элементтің беттегі орналасуын анықтайды. <br>Мысал: <code>position: absolute;</code></p>
+    </details>
+    <details>
+      <summary><strong>top, right, bottom, left</strong> — позициялау</summary>
+      <p>Элементті нақты орынға жылжыту үшін қолданылады. <br>Мысал: <code>top: 10px; left: 20px;</code></p>
+    </details>
+    <details>
+      <summary><strong>z-index</strong> — қабат реті</summary>
+      <p>Элементтің қабат ретін анықтайды. <br>Мысал: <code>z-index: 10;</code></p>
+    </details>
+    <details>
+      <summary><strong>opacity</strong> — мөлдірлік</summary>
+      <p>Элементтің мөлдірлігін орнатады. <br>Мысал: <code>opacity: 0.5;</code></p>
+    </details>
+    <details>
+      <summary><strong>cursor</strong> — меңзер түрі</summary>
+      <p>Меңзердің түрін өзгертеді. <br>Мысал: <code>cursor: pointer;</code></p>
+    </details>
+    <details>
+      <summary><strong>transition</strong> — анимация</summary>
+      <p>Элементтің өзгерісін тегіс анимациямен көрсетеді. <br>Мысал: <code>transition: background 0.3s;</code></p>
+    </details>
+    <details>
+      <summary><strong>animation</strong> — күрделі анимация</summary>
+      <p>Күрделі анимация жасауға мүмкіндік береді. <br>Мысал: <code>animation: mymove 2s infinite;</code></p>
+    </details>
+    <details>
+      <summary><strong>@media</strong> — адаптивті дизайн</summary>
+      <p>Әр түрлі экран өлшемдеріне бейімдеу үшін қолданылады. <br>Мысал: <br>
+      <code>@media (max-width: 600px) { body { font-size: 16px; } }</code></p>
+    </details>
+    <details>
+      <summary><strong>box-sizing</strong> — өлшемді басқару</summary>
+      <p>Элементтің өлшемін қалай есептеу керектігін анықтайды. <br>Мысал: <code>box-sizing: border-box;</code></p>
+    </details>
+    <details>
+      <summary><strong>outline</strong> — сыртқы жиек</summary>
+      <p>Элементтің сыртқы жиегін орнатады. <br>Мысал: <code>outline: 2px solid #a4bfef;</code></p>
+    </details>
+    <details>
+      <summary><strong>filter</strong> — визуалды эффекттер</summary>
+      <p>Элементке blur, brightness сияқты эффекттер қосады. <br>Мысал: <code>filter: blur(2px);</code></p>
+    </details>
+  </div>
+  <h2>CSS бойынша кеңестер:</h2>
+  <ul>
+    <li>Кластарды қолданыңыз: <code>.my-class { ... }</code></li>
+    <li>Flexbox пен Grid арқылы күрделі орналасуларды оңай жасаңыз.</li>
+    <li>Анимация үшін <code>transition</code> және <code>animation</code> қасиеттерін қолданыңыз.</li>
+    <li>Мобильді құрылғыларға бейімдеу үшін <code>@media</code> сұраныстарын пайдаланыңыз.</li>
+    <li>CSS-ті бөлек файлда сақтау — кодты таза әрі ыңғайлы етеді.</li>
+    <li>Кодты түсініктемелермен толықтырыңыз: <code>/* Бұл түсініктеме */</code></li>
+  </ul>
+  <h2>Пайдалы ресурстар:</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/kk/docs/Web/CSS" target="_blank">MDN CSS анықтамалығы</a></li>
+    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+    <li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy (ойын арқылы flex үйрену)</a></li>
+    <li><a href="https://cssgridgarden.com/" target="_blank">Grid Garden (ойын арқылы grid үйрену)</a></li>
+  </ul>
 </section>
 
 
 <section id="js-section" style="display:none;">
   <h2>JavaScript дегеніміз не?</h2>
-  <p>JavaScript — веб-беттерге интерактивтілік қосатын бағдарламалау тілі...</p>
-        JavaScript арқылы батырмаға басқанда әрекет жасауға, деректерді өңдеуге, анимация қосуға болады.
-    </p>
-    <h3>Мысал код:</h3>
-    <pre><code>
-// Батырмаға басқанда хабарлама шығару
-document.getElementById('btn').onclick = function() {
+  <p>
+    <b>JavaScript</b> — бұл веб-беттерге интерактивтілік қосатын бағдарламалау тілі.<br>
+    JavaScript арқылы батырмаға басқанда әрекет жасауға, деректерді өңдеуге, анимация қосуға болады.<br>
+    JavaScript — вебтің "миы".
+  </p>
+  <h2>JavaScript код үлгісі</h2>
+  <pre><code class="language-js">document.getElementById('btn-js-demo').onclick = function() {
     alert('Сәлем, әлем!');
-};
-    </code></pre>
-    <h3>Жұмыс істейтін мысал:</h3>
-    <button id="btn-js-demo" style="margin-top:10px;">Бас!</button>
+};</code></pre><button onclick="copyCode('#js-section pre code')">Кодты көшіру</button>
+  <h2>Негізгі және қосымша JavaScript қасиеттері</h2>
+  <div class="accordion">
+    <details>
+      <summary><strong>let, const, var</strong> — айнымалыларды жариялау</summary>
+      <p><code>let</code> — өзгеретін айнымалы, <code>const</code> — тұрақты, <code>var</code> — ескі синтаксис.<br>Мысал: <code>let a = 5;</code></p>
+    </details>
+    <details>
+      <summary><strong>function</strong> — функция жазу</summary>
+      <p>Кодты қайта қолдану үшін функциялар.<br>Мысал: <code>function hello() { alert('Сәлем!'); }</code></p>
+    </details>
+    <details>
+      <summary><strong>if, else</strong> — шартты операторлар</summary>
+      <p>Шартқа байланысты кодты орындау.<br>Мысал: <code>if (a > 5) { ... } else { ... }</code></p>
+    </details>
+    <details>
+      <summary><strong>for, while</strong> — циклдер</summary>
+      <p>Кодты бірнеше рет орындау.<br>Мысал: <code>for (let i=0; i&lt;5; i++) { ... }</code></p>
+    </details>
+    <details>
+      <summary><strong>document.getElementById</strong> — элементті таңдау</summary>
+      <p>HTML элементін id арқылы таңдайды.<br>Мысал: <code>document.getElementById('demo')</code></p>
+    </details>
+    <details>
+      <summary><strong>addEventListener</strong> — оқиғаға әрекет</summary>
+      <p>Элементке оқиға қосу.<br>Мысал: <code>button.addEventListener('click', function() { ... });</code></p>
+    </details>
+    <details>
+      <summary><strong>innerHTML</strong> — элементтің мазмұнын өзгерту</summary>
+      <p>HTML-ді динамикалық өзгерту.<br>Мысал: <code>div.innerHTML = "Жаңа мәтін";</code></p>
+    </details>
+    <details>
+      <summary><strong>console.log</strong> — консольға шығару</summary>
+      <p>Деректерді тексеру үшін.<br>Мысал: <code>console.log(a);</code></p>
+    </details>
+    <details>
+      <summary><strong>prompt, alert, confirm</strong> — диалогтық терезелер</summary>
+      <p>Пайдаланушыдан дерек алу немесе хабарлама шығару.<br>Мысал: <code>alert('Сәлем!');</code></p>
+    </details>
+    <details>
+      <summary><strong>setTimeout, setInterval</strong> — уақытпен жұмыс</summary>
+      <p>Кодты белгілі бір уақыттан кейін немесе аралықпен орындау.<br>Мысал: <code>setTimeout(function(){ ... }, 1000);</code></p>
+    </details>
+    <details>
+      <summary><strong>Array</strong> — массивтер</summary>
+      <p>Көп деректі сақтау үшін.<br>Мысал: <code>let arr = [1,2,3];</code></p>
+    </details>
+    <details>
+      <summary><strong>Object</strong> — объектілер</summary>
+      <p>Күрделі деректерді сақтау үшін.<br>Мысал: <code>let user = {name: "Айжан", age: 18};</code></p>
+    </details>
+    <details>
+      <summary><strong>JSON</strong> — деректер алмасу форматы</summary>
+      <p>Деректерді сақтау және жіберу үшін.<br>Мысал: <code>let str = JSON.stringify(user);</code></p>
+    </details>
+    <details>
+      <summary><strong>try...catch</strong> — қателерді өңдеу</summary>
+      <p>Қате шыққанда кодтың тоқтап қалмауы үшін.<br>Мысал: <code>try { ... } catch(e) { ... }</code></p>
+    </details>
+    <details>
+      <summary><strong>localStorage</strong> — деректерді сақтау</summary>
+      <p>Браузерде деректерді сақтау.<br>Мысал: <code>localStorage.setItem('key', 'value');</code></p>
+    </details>
+    <details>
+      <summary><strong>fetch</strong> — серверден дерек алу</summary>
+      <p>Серверге сұраныс жіберу.<br>Мысал: <code>fetch('data.json').then(...)</code></p>
+    </details>
+    <details>
+      <summary><strong>class</strong> — класс жазу</summary>
+      <p>Объектілерді құру үшін.<br>Мысал: <code>class Car { constructor(name) { this.name = name; } }</code></p>
+    </details>
+    <details>
+      <summary><strong>arrow function</strong> — қысқа функция</summary>
+      <p>Қысқа жазу үшін.<br>Мысал: <code>const sum = (a, b) => a + b;</code></p>
+    </details>
+    <details>
+      <summary><strong>map, filter, reduce</strong> — массивтерді өңдеу</summary>
+      <p>Массивпен жұмыс істеу.<br>Мысал: <code>arr.map(x => x*2);</code></p>
+    </details>
+    <details>
+      <summary><strong>window</strong> — браузер терезесі</summary>
+      <p>Браузердің негізгі объектісі.<br>Мысал: <code>window.location.href</code></p>
+    </details>
+    <details>
+      <summary><strong>document</strong> — DOM-мен жұмыс</summary>
+      <p>HTML құрылымымен жұмыс.<br>Мысал: <code>document.body.style.background = "red";</code></p>
+    </details>
+  </div>
+  <h2>JavaScript бойынша кеңестер:</h2>
+  <ul>
+    <li>Кодты функцияларға бөліңіз — оқуға және жөндеуге жеңіл болады.</li>
+    <li>Консольға <code>console.log()</code> арқылы деректерді шығарып, қателерді оңай табуға болады.</li>
+    <li>Барлық әрекеттерді <code>DOMContentLoaded</code> оқиғасынан кейін орындаңыз.</li>
+    <li>Қателерді өңдеу үшін <code>try...catch</code> қолданыңыз.</li>
+    <li>Массивтер мен объектілерді жиі қолданыңыз — деректерді сақтау үшін ыңғайлы.</li>
+    <li>Браузердің құралдарын (F12) пайдаланып, кодты тестілеңіз.</li>
+  </ul>
+  <h2>Пайдалы ресурстар:</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/kk/docs/Web/JavaScript" target="_blank">MDN JavaScript анықтамалығы</a></li>
+    <li><a href="https://learn.javascript.ru/" target="_blank">JavaScript оқу курсы (орысша)</a></li>
+    <li><a href="https://javascript.info/" target="_blank">JavaScript Info</a></li>
+  </ul>
+  <h2>Жұмыс істейтін мысал:</h2>
+  <button id="btn-js-demo" style="margin-top:10px;">Бас!</button>
 </section>
-</section>
+<section><div class="welcome">
+  <h1 class="welcome-title">Сайтқа қош келдіңіз!</h1>
+  <p class="welcome-sub">Веб-технологияларды үйрену және кодтау алаңы</p>
+</div>
+    </div></section>
  <section>
-  <h2>кодтауға арналған кеңістік</h2>
   <div class="code-playground">
     <div class="code-inputs">
       <textarea id="html-code" placeholder="HTML" rows="6"></textarea>
@@ -197,17 +411,31 @@ document.getElementById('btn').onclick = function() {
       <textarea id="js-code" placeholder="JavaScript" rows="6"></textarea>
     </div>
     <button id="run-code" class="theme-btn" style="position:static;margin:12px 0;">Нәтиже көрсету</button>
+    <button id="clear-editor" class="clear-btn" title="Тазарту">✖</button>
     <div class="code-result">
+        <div id="loader" style="display:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:2rem;color:#6a93cb;">⏳</div>
       <iframe id="result-frame" style="width:100%;height:220px;border-radius:8px;border:1px solid #e3e8ee;background:#fff;"></iframe>
     </div>
   </div>
 </section>
-       
-        <section>
-           
-            </div>
-        </section>
+
+<section>
+    <h2>Пайдалы сілтемелер</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/kk/" target="_blank">MDN Web Docs (қазақша)</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+        <li><a href="https://jsfiddle.net/" target="_blank">JSFiddle</a></li>
+        <li><a href="https://caniuse.com/" target="_blank">Can I use...</a></li>
+        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+        <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+        <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+    </ul>
+</section>
+
         <script src="script.js"></script>
+        
     </main>
+    <button id="to-top" style="display:none;position:fixed;right:32px;bottom:32px;z-index:999;" class="theme-btn theme-circle" title="Жоғары">↑</button>
 </body>
 </html>
